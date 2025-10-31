@@ -1,19 +1,19 @@
 
     // ======== EDIT THESE BASIC SETTINGS ========
-    const HOST_NAME = "Rajkamal"; // Your name
-    const EVENT_TITLE = "Rajkamal's Birthday Bash";
-    const VENUE_NAME = "La Fumee";
-    const VENUE_ADDRESS = "Boring Road, Patna";
-    const EVENT_CITY = "Patna";
-    const EVENT_START_LOCAL = new Date("2025-09-20T18:00:00+05:30");
-    const EVENT_END_LOCAL   = new Date("2025-09-20T21:30:00+05:30");
+    const HOST_NAME = "Lam Tang"; // Your name
+    const EVENT_TITLE = "Lam's 18 sweet birthday";
+    const VENUE_NAME = "My sweet Home";
+    const VENUE_ADDRESS = "333 Taralake Way NE";
+    const EVENT_CITY = "Calgary";
+    const EVENT_START_LOCAL = new Date("2025-11-14T17:00:00+05:00");
+    const EVENT_END_LOCAL   = new Date("2025-11-14T21:30:00+05:30");
     const GOOGLE_MAPS_QUERY = encodeURIComponent(`${VENUE_NAME}, ${VENUE_ADDRESS}`);
-    const WHATSAPP_TO = ""; // put your phone like 9198XXXXXXXX to open personal chat. Keep empty to use generic share.
+    const WHATSAPP_TO = ""; // put your phone like 403XXXXXXXX to open personal chat. Keep empty to use generic share.
     // ===========================================
 
     // Set Maps button
     const mapsBtn = document.getElementById('mapsBtn');
-    mapsBtn.href = "https://maps.app.goo.gl/554d8uKtUoGqhSTC7";
+    mapsBtn.href = "https://maps.app.goo.gl/TehYThUPrPW9DoMVA";
 
     // Countdown
     function pad(n){return String(n).padStart(2,'0')}
@@ -71,7 +71,7 @@
         `Hi ${HOST_NAME}!`,
         `${name} here. I am coming ${guests.toLowerCase()}.`,
         msg?`Note: ${msg}`: null,
-        `See you at ${VENUE_NAME} on 20 Sept at 6:00 PM!`
+        `See you at ${VENUE_NAME} on 14 Nov at 5:00 PM!`
       ].filter(Boolean).join('\n');
       const text = encodeURIComponent(lines);
       const base = /Android|iPhone|iPad/i.test(navigator.userAgent) ? 'whatsapp://send' : 'https://wa.me';
