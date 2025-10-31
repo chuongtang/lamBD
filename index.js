@@ -65,11 +65,11 @@
     document.getElementById('rsvpForm').addEventListener('submit', (e)=>{
       e.preventDefault();
       const name = document.getElementById('name').value.trim() || 'Friend';
-      const guests = document.getElementById('guests').value;
+      // const guests = document.getElementById('guests').value;
       const msg = document.getElementById('msg').value.trim();
       const lines = [
         `Hi ${HOST_NAME}!`,
-        `${name} here. I am coming ${guests.toLowerCase()}.`,
+        `${name} here. I am coming`,
         msg?`Note: ${msg}`: null,
         `See you at ${VENUE_NAME} on 14 Nov at 5:00 PM!`
       ].filter(Boolean).join('\n');
